@@ -33,29 +33,22 @@ class PostCardComponent extends HTMLElement{
             </style>
             `
 
+            ;
+
             this.shadowRoot.innerHTML += `
-            
             <div class="card">
-
-             <span class="card-title">${this.post.data.title}</span>
-             <span class="card-author">${this.post.data.author}</span>
-
-                <div class="card-details">
-                    <span class="card-detail">${this.post.data.created}</span>
-                    <span class="card-detail">${this.post.data.url}</span>
-                    <span class="card-detail" id="post-thumbnail">${this.post.data.thumbnail}</span>
-                </div>
+              <span class="card-title">${this.post.data.title}</span>
+              <span class="card-author">${this.post.data.author}</span>
+              <div class="card-details">
+                <span class="card-detail">${this.post.data.created}</span>
+                <span class="card-detail">${this.post.data.url}</span>
+                <img class="card-detail" src="${this.post.data.thumbnail}" alt="Thumbnail">
+              </div>
             </div>
-            
-            `
-
-            const postThumbnail = document.getElementById('post-thumbnail');
-            const img = document.createElement('img')
-            img.src = this.post.thumbnail
-            postThumbnail.appendChild(img)
-
+          `;
+        
         }
-    }
+      }
 }
 
 customElements.define('post-card', PostCardComponent);
