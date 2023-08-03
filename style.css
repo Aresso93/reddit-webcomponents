@@ -5,14 +5,13 @@
     border-radius: 16px;
     padding: 16px;
     margin-bottom: 4px;
+   
 }
+
+
 
 .card-title{
     font-size: x-large;
     font-weight: bold;
 }
 
-
-body{
-    background-color: blue;
-}

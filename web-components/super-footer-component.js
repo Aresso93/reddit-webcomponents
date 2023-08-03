@@ -13,7 +13,7 @@ class SuperFooterComponent extends HTMLElement{
 
         this.shadowRoot.innerHTML = `
         
-        <p>©Game Platform 2023</p>
+        <p>©Reddit Platform 2023</p>
         `
     }
 }
