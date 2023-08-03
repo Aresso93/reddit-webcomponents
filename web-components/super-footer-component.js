@@ -19,3 +19,5 @@ class SuperFooterComponent extends HTMLElement{
 }
 
 customElements.define('super-footer', SuperFooterComponent);
+
+
