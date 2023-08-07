@@ -17,7 +17,7 @@ class SuperHeaderComponent extends HTMLElement{
         this.shadowRoot.appendChild(style);
 
         const h1 = document.createElement('h1');
-        h1.appendChild(document.createTextNode(this.getAttribute('super-title') + ' Fiumicelli, Falzone & Di Lionardo edition'))
+        h1.appendChild(document.createTextNode(this.getAttribute('super-title')))
         this.shadowRoot.appendChild(h1);
     }
 }

@@ -7,10 +7,54 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <dialog open>
+        <div class="subreddit-list">
+            A quali subreddit sei interessato? Metti la spunta a quelli che vuoi vedere (minimo 1) e clicca su "Ho finito" quando hai deciso
+           
+            <label>
+                <input type="checkbox" name ="subreddit" value = "aww"><a href="https://www.reddit.com/r/aww/" target="_blank" rel="noopener noreferrer">r/aww</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "italy"><a href="https://www.reddit.com/r/italy/" target="_blank" rel="noopener noreferrer">r/italy</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "Minecraft"><a href="https://www.reddit.com/r/Minecraft/" target="_blank" rel="noopener noreferrer">r/Minecraft</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "fromsoftware"><a href="https://www.reddit.com/r/fromsoftware/" target="_blank" rel="noopener noreferrer">r/fromsoftware</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "ProgrammerHumor"><a href="https://www.reddit.com/r/ProgrammerHumor/" target="_blank" rel="noopener noreferrer">r/ProgrammerHumor</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "cats"><a href="https://www.reddit.com/r/cats/" target="_blank" rel="noopener noreferrer"> r/cats </a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "StreetFighter"><a href="https://www.reddit.com/r/StreetFighter/" target="_blank" rel="noopener noreferrer">r/StreetFighter</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "beer"><a href="https://www.reddit.com/r/beer/" target="_blank" rel="noopener noreferrer">r/beer</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "tipofmytongue"><a href="https://www.reddit.com/r/tipofmytongue/" target="_blank" rel="noopener noreferrer">r/tipofmytongue</a>
+            </label>
+            <label>
+                <input type="checkbox" name ="subreddit" value = "explainlikeimfive"><a href="https://www.reddit.com/r/explainlikeimfive/" target="_blank" rel="noopener noreferrer">r/explainlikeimfive</a>
+            </label>
+            
+        <form method="dialog">
+          <button id = "submit-button">Ho finito</button>
+        </div>
+        </form>
+      </dialog>
+      
+    
+    </div>
     <super-header id="header" super-title="Reddit Posts"></super-header>
     <posts-list></posts-list>
     <super-footer></super-footer>
 </body>
+<script src="./other-functions.js"></script>
 <script src="./web-components/post-card-component.js"></script>
 <script src="./web-components/post-list-component.js"></script>
 <script src="./web-components/super-footer-component.js"></script>
