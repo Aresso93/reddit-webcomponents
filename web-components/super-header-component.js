@@ -13,7 +13,7 @@ class SuperHeaderComponent extends HTMLElement{
 
         this.shadowRoot.innerHTML = '';
         const style = document.createElement('style');
-        style.innerHTML = `h1{color: ${this.getAttribute('title-color') || 'green'}}`;
+        style.innerHTML = `h1{color: ${this.getAttribute('title-color') || 'carbon'}}`;
         this.shadowRoot.appendChild(style);
 
         const h1 = document.createElement('h1');

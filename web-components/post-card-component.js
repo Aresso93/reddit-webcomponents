@@ -16,15 +16,16 @@ class PostCardComponent extends HTMLElement{
           this.shadowRoot.innerHTML = `
           <style>
           .card{
-              display: flex;
-              flex-direction: column;
-              background-color: wheat;
-              border-radius: 16px;
-              padding: 16px;
-              margin-bottom: 4px;
-              width: 30%;
-              justify-content: center;
-            }
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(41, 27, 233, 0.842);
+            border: 2px solid rgb(209, 155, 8);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 4px;
+           
+        }
+        
             
             .card-title{
               font-size: x-large;

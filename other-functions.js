@@ -21,3 +21,7 @@ submitButton.addEventListener('click', function(event){
     }
 })
 }
+
+const dialogButton = document.getElementById('dialog-btn')
+const dialog = document.querySelector('dialog')
+dialogButton.addEventListener('click', () => {dialog.showModal()})
