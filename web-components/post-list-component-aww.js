@@ -1,4 +1,4 @@
-class PostsListComponent extends HTMLElement{
+class AwwPostsListComponent extends HTMLElement{
 
     constructor(){
         super();
@@ -41,4 +41,4 @@ class PostsListComponent extends HTMLElement{
 
 }
 
-customElements.define('posts-list', PostsListComponent);
+customElements.define('aww-posts-list', AwwPostsListComponent);
