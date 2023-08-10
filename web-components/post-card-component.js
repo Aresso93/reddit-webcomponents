@@ -23,6 +23,7 @@ class PostCardComponent extends HTMLElement{
             border-radius: 16px;
             padding: 16px;
             margin-bottom: 4px;
+            justify-content: space-between;
            
         }
         
