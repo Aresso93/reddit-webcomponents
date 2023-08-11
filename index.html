@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reddit Posts</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <div class="main-container">
 
-   
 
-    <dialog open>
-        <div class="subreddit-list">
-            A quali subreddit sei interessato? Metti la spunta a quelli che vuoi vedere (minimo 1) e clicca su "Ho finito" quando hai deciso
-           
-            <label>
-                <input type="checkbox" name ="subreddit" value = "aww"><a href="https://www.reddit.com/r/aww/" target="_blank" rel="noopener noreferrer">r/aww</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "italy"><a href="https://www.reddit.com/r/italy/" target="_blank" rel="noopener noreferrer">r/italy</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "Minecraft"><a href="https://www.reddit.com/r/Minecraft/" target="_blank" rel="noopener noreferrer">r/Minecraft</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "fromsoftware"><a href="https://www.reddit.com/r/fromsoftware/" target="_blank" rel="noopener noreferrer">r/fromsoftware</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "ProgrammerHumor"><a href="https://www.reddit.com/r/ProgrammerHumor/" target="_blank" rel="noopener noreferrer">r/ProgrammerHumor</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "cats"><a href="https://www.reddit.com/r/cats/" target="_blank" rel="noopener noreferrer"> r/cats </a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "StreetFighter"><a href="https://www.reddit.com/r/StreetFighter/" target="_blank" rel="noopener noreferrer">r/StreetFighter</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "beer"><a href="https://www.reddit.com/r/beer/" target="_blank" rel="noopener noreferrer">r/beer</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "tipofmytongue"><a href="https://www.reddit.com/r/tipofmytongue/" target="_blank" rel="noopener noreferrer">r/tipofmytongue</a>
-            </label>
-            <label>
-                <input type="checkbox" name ="subreddit" value = "explainlikeimfive"><a href="https://www.reddit.com/r/explainlikeimfive/" target="_blank" rel="noopener noreferrer">r/explainlikeimfive</a>
-            </label>
-            
-        <form method="dialog">
-          <button id = "submit-button">Ho finito</button>
-        </div>
-        </form>
-      </dialog>
-      
-    
+
+        <dialog open>
+            <div class="subreddit-list">
+                A quali subreddit sei interessato? Metti la spunta a quelli che vuoi vedere (minimo 1) e clicca su "Ho
+                finito" quando hai deciso
+
+                <label>
+                    <input type="checkbox" name="subreddit" value="aww"><a href="https://www.reddit.com/r/aww/"
+                        target="_blank" rel="noopener noreferrer">r/aww</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="italy"><a href="https://www.reddit.com/r/italy/"
+                        target="_blank" rel="noopener noreferrer">r/italy</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="Minecraft"><a
+                        href="https://www.reddit.com/r/Minecraft/" target="_blank"
+                        rel="noopener noreferrer">r/Minecraft</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="fromsoftware"><a
+                        href="https://www.reddit.com/r/fromsoftware/" target="_blank"
+                        rel="noopener noreferrer">r/fromsoftware</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="ProgrammerHumor"><a
+                        href="https://www.reddit.com/r/ProgrammerHumor/" target="_blank"
+                        rel="noopener noreferrer">r/ProgrammerHumor</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="cats"><a href="https://www.reddit.com/r/cats/"
+                        target="_blank" rel="noopener noreferrer"> r/cats </a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="StreetFighter"><a
+                        href="https://www.reddit.com/r/StreetFighter/" target="_blank"
+                        rel="noopener noreferrer">r/StreetFighter</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="beer"><a href="https://www.reddit.com/r/beer/"
+                        target="_blank" rel="noopener noreferrer">r/beer</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="tipofmytongue"><a
+                        href="https://www.reddit.com/r/tipofmytongue/" target="_blank"
+                        rel="noopener noreferrer">r/tipofmytongue</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="subreddit" value="explainlikeimfive"><a
+                        href="https://www.reddit.com/r/explainlikeimfive/" target="_blank"
+                        rel="noopener noreferrer">r/explainlikeimfive</a>
+                </label>
+
+                <form method="dialog">
+                    <button id="submit-button">Ho finito</button>
+                </form>
+                </div>
+        </dialog>
+
+
     </div>
     <div class="header-upper-div">
-    <super-header id="header" super-title="Reddit Posts">
+        <super-header id="header" super-title="Reddit Posts">
 
 
-    </super-header>
-    <div class="header-lower-div">
-        Hai dimenticato di iscriverti a un subreddit che volevi? <button id="dialog-btn">Riapri la lista!</button> <br>
-        <a href="./aww.html" target="_blank" rel="noopener noreferrer">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
-        <a href="./minecraft.html" target="_blank" rel="noopener noreferrer">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</a>
-    </div>
+        </super-header>
+        <div class="header-lower-div">
+            Hai dimenticato di iscriverti a un subreddit che volevi? <button id="dialog-btn">Riapri la lista!</button>
+            <br>
+            <a href="./aww.html" target="_blank"
+                rel="noopener noreferrer">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+            <a href="./minecraft.html" target="_blank"
+                rel="noopener noreferrer">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</a>
+        </div>
     </div>
     <posts-list></posts-list>
     <div id="super-header-nav"></div>
@@ -79,5 +101,5 @@
 <script src="./web-components/super-footer-component.js"></script>
 <script src="./web-components/super-header-component.js"></script>
 <script src="./main.js"></script>
-</html>
 
+</html>
