@@ -1,7 +1,5 @@
 
-
 function updateNavbar(checkboxes){
-    console.log('SHORYUKEN!!!');
     const selectedSubreddits = [];
     checkboxes.forEach(checkbox => {
         if (checkbox.checked){
@@ -9,21 +7,19 @@ function updateNavbar(checkboxes){
         }
     });
 
+    const customHeader = document.querySelector('super-header');
+    const navbarContainer = customHeader.shadowRoot.querySelector('.navbar-container'); // Usa la classe o l'id che hai definito
 
-    const customHeader = document.querySelector('#header');
-    customHeader.innerHTML = '';
+    navbarContainer.innerHTML = '';
     selectedSubreddits.forEach(subreddit => {
         const link = document.createElement('a');
         link.appendChild(document.createTextNode(`r/${subreddit} - `))
         link.href = `./${subreddit}.html`;
-        customHeader.appendChild(link);
+        navbarContainer.appendChild(link);
     })
 
-
     return customHeader;
-
 }
-
 
 
 
