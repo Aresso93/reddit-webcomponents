@@ -1,3 +1,4 @@
+const localStorageKey = 'checked-subreddits';
 
 function updateNavbar(checkboxes){
     const selectedSubreddits = [];
@@ -22,6 +23,55 @@ function updateNavbar(checkboxes){
 }
 
 
+function saveLocally(){
+    const checkboxes = document.querySelectorAll('dialog input[type="checkbox"]')
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            const selectedSubreddits = [];
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    selectedSubreddits.push(cb.value);
+                }
+               
+            })
+            localStorage.setItem(localStorageKey, JSON.stringify(selectedSubreddits))
+    })
+  
+
+ });
+
+}
+
+function loadLocally(){
+    const dialog = document.querySelector('dialog')
+    const data = localStorage.getItem(localStorageKey)
+    
+    if (!data){
+        dialog.showModal();
+    } else {
+
+        const savedSubreddits = JSON.parse(data);
+        savedSubreddits.forEach(savedSubreddit => {
+            const savedCheckbox = dialog.querySelector(`input[value="${savedSubreddit}"]`)
+            if (savedCheckbox) {
+                savedCheckbox.checked = true;
+
+    }
+    
+   
+
+        
+        
+       
+        })
+    };
+
+}
+
+
+saveLocally();
+
+loadLocally();
 
 // const navbarContainer = document.querySelector('.tatsumaki'); // Cambia la selezione in base al tuo setup
 //     navbarContainer.innerHTML = ''; // Rimuovi il contenuto esistente
